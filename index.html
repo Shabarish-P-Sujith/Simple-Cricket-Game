@@ -10,33 +10,9 @@
     <h1>Cricket Game</h1>
     <h3>Bat Ball Stump Game</h3>
     <hr><hr><br>
-    <button onclick="
-    let userChoiceMsg = 'You have chosen Bat';
-    generateComputerChoice();
-    let computerChoiceMsg1 = `The computer has chosen ${computerChoice}`;
-    choice('Bat',computerChoice);
-
-    console.log(`${userChoiceMsg}\n${computerChoiceMsg1}\n${resultMsg}\n`);
-    ">Bat</button>
-
-    <button onclick="
-    let userChoiceMsg2 = 'You have chosen Ball';
-    generateComputerChoice();
-    choice('Ball',computerChoice);
-    let computerChoiceMsg2 = `The computer has chosen ${computerChoice}`;
-
-    console.log(`${userChoiceMsg2}\n${computerChoiceMsg2}\n${resultMsg}\n`);
-    ">Ball</button>
-    
-    <button onclick="
-    let userChoiceMsg3 = 'You have chosen Stump';
-    generateComputerChoice();
-    let computerChoiceMsg3 = `The computer has chosen ${computerChoice}`;
-    choice('Stump',computerChoice);
-    
-    console.log(`${userChoiceMsg3}\n${computerChoiceMsg3}\n${resultMsg}\n`);
-    ">Stump</button>
-    
+    <button onclick="finalChoice('Bat')">Bat</button>
+    <button onclick="finalChoice('Ball');">Ball</button>
+    <button onclick="finalChoice('Stump')">Stump</button>
     <script src="script.js"></script>
 </body>
 </html>
