@@ -1,6 +1,4 @@
-let computerChoice;
-
-let resultMsg ;
+let userChoice,computerChoice,resultMsg;
 
 function generateComputerChoice() {
     let randomNumber = Math.random() * 3;
@@ -13,3 +11,32 @@ function generateComputerChoice() {
     }    
 }
 
+function choice(userChoice,computerChoice){
+    if (userChoice === 'Bat') {
+        if (computerChoice === userChoice) {
+            resultMsg = '!!! DRAW !!!';
+        }else if (computerChoice === 'Ball') {
+            resultMsg = 'User WON the Game';
+        }else if (computerChoice === 'Stump') {
+            resultMsg = 'Computer WON the Game';
+        }
+    } 
+    else if (userChoice === 'Ball') {
+        if(computerChoice === 'Bat'){
+            resultMsg = 'Computer WON the Game';
+        }else if(computerChoice === userChoice){
+            resultMsg = '!!! DRAW !!!';
+        }else if(computerChoice === 'Stump'){
+            resultMsg = 'User WON the Game';
+        }
+    } 
+    else if (userChoice === 'Stump') {
+        if(computerChoice === 'Bat'){
+            resultMsg = 'User WON the Game';
+        }else if(computerChoice === 'Ball'){
+            resultMsg = 'Computer WON the Game';
+        }else if(computerChoice === userChoice){
+            resultMsg = '!!! DRAW !!!';
+        }
+    } 
+}

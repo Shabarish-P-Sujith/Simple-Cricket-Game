@@ -13,33 +13,18 @@
     <button onclick="
     let userChoiceMsg = 'You have chosen Bat';
     generateComputerChoice();
-    let computerChoiceMsg = `The computer has chosen ${computerChoice}`;
+    let computerChoiceMsg1 = `The computer has chosen ${computerChoice}`;
+    choice('Bat',computerChoice);
 
-    if (computerChoice === 'Bat') {
-        resultMsg = '!!! DRAW !!!';
-    }else if (computerChoice === 'Ball') {
-        resultMsg = 'User WON the Game';
-    }else {
-        resultMsg = 'Computer WON the Game';
-    }
-
-    // alert(`${userChoiceMsg} \n ${computerChoiceMsg} \n ${resultMsg}`);
-    console.log(`${userChoiceMsg}\n${computerChoiceMsg}\n${resultMsg}\n`);
+    console.log(`${userChoiceMsg}\n${computerChoiceMsg1}\n${resultMsg}\n`);
     ">Bat</button>
 
     <button onclick="
     let userChoiceMsg2 = 'You have chosen Ball';
     generateComputerChoice();
+    choice('Ball',computerChoice);
     let computerChoiceMsg2 = `The computer has chosen ${computerChoice}`;
 
-    if(computerChoice === 'Bat'){
-        resultMsg = 'Computer WON the Game';
-    }else if(computerChoice === 'Ball'){
-        resultMsg = '!!! DRAW !!!';
-    }else if(computerChoice === 'Stump'){
-        resultMsg = 'User WON the Game';
-    }
-    // alert(`${userChoiceMsg} \n ${computerChoiceMsg} \n ${resultMsg}`);
     console.log(`${userChoiceMsg2}\n${computerChoiceMsg2}\n${resultMsg}\n`);
     ">Ball</button>
     
@@ -47,15 +32,8 @@
     let userChoiceMsg3 = 'You have chosen Stump';
     generateComputerChoice();
     let computerChoiceMsg3 = `The computer has chosen ${computerChoice}`;
+    choice('Stump',computerChoice);
     
-    if(computerChoice === 'Bat'){
-        resultMsg = 'User WON the Game';
-    }else if(computerChoice === 'Ball'){
-        resultMsg = 'Computer WON the Game';
-    }else if(computerChoice === 'Stump'){
-        resultMsg = '!!! DRAW !!!';
-    }
-    // alert(`${userChoiceMsg}\n${computerChoiceMsg}\n${resultMsg}`);
     console.log(`${userChoiceMsg3}\n${computerChoiceMsg3}\n${resultMsg}\n`);
     ">Stump</button>
     
