@@ -15,6 +15,9 @@ let score = {
     win: 0,
     lose: 0,
     tie: 0,
+    displayScore: function() {
+        return `Win = ${score.win}, Lose = ${score.lose}, Tie = ${score.tie}`;
+    }
 };
 
 function choice(userChoice,computerChoice){
@@ -62,5 +65,6 @@ function finalChoice(userChoice) {
     console.log(`Computer has chose ${computerChoice}`);
     choice(userChoice,computerChoice);
     console.log(resultMsg);
-    console.log(score); console.log('\n');    
+    score.displayScore(); 
+    console.log('\n');    
 }
